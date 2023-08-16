@@ -10,6 +10,10 @@
   margin-bottom: 4px;
 }
 
+.form .col-2 {
+  grid-column: span 2;
+}
+
 .form input[type="text"],
 .form input[type="email"],
 .form textarea {
@@ -29,4 +33,13 @@
   border-color: var(--cor-p1);
   background: var(--cor-0);
   box-shadow: 0 0 0 2px #fea;
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form .col-2 {
+    grid-column: 1;
+  }
 }
